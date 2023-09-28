@@ -89,8 +89,20 @@ img {
   font-weight: 500;
   line-height: 1.5;
   padding: 24px 0;
+  position: relative;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
-
+.header-link:hover::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: 20px;
+  background-color: #404bbf;
+}
 .header-link:focus,
 .header-link:hover {
   color: #404bbf;
@@ -110,6 +122,9 @@ img {
   color: #434455;
   text-decoration: none;
   line-height: 1.5;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
 
 .address-link:hover,
@@ -170,6 +185,9 @@ img {
   cursor: pointer;
   min-width: 169px;
   border: none;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
 .title-btn:hover,
 .title-btn:focus {
@@ -277,18 +295,36 @@ img {
   line-height: 1.5;
   text-align: center;
 }
+.team-name-container {
+  align-items: center;
+}
 .team-icon-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
-  margin-left: 16px;
-  margin-right: 16px;
+  padding-left: 0;
 }
-.team-icon-links {
+.team-icon-item {
   width: 40px;
   height: 40px;
-  padding: 12px;
-  border-radius: 50%;
+}
+.team-icon-links {
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+.team-icon-links:hover,
+.team-icon-links:focus {
+  background-color: #404bbf;
 }
 
 /** ====== Portfolio ======= */
@@ -373,4 +409,53 @@ img {
 }
 .footer-section {
   flex-direction: column;
+  margin-right: 120px;
+}
+.footer-box {
+}
+.footer-text-soc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-left: 0;
+}
+.footer-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-boxes {
+  flex-direction: column;
+}
+.footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #31d0aa;
+}
+.svg-footer {
+  fill: #f4f4fd;
+}
+.footer-section-box {
+  display: flex;
+  align-items: center;
 }
