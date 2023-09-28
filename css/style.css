@@ -129,6 +129,15 @@ img {
   align-items: center;
   text-align: center;
   padding: 188px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/People-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .title-container {
   display: flex;
@@ -186,6 +195,13 @@ img {
   overflow: hidden;
 }
 
+.achievement-icon-container {
+  padding: 24px 100px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
 .achievements-title {
   color: #2e2f42;
   font-size: 20px;
@@ -260,6 +276,19 @@ img {
   color: #434455;
   line-height: 1.5;
   text-align: center;
+}
+.team-icon-list {
+  display: flex;
+  gap: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.team-icon-links {
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
 }
 
 /** ====== Portfolio ======= */
