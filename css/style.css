@@ -86,7 +86,7 @@ img {
   align-items: center;
 }
 .header-link {
-  color: #404bbf;
+  color: #2e2f42;
   text-decoration: none;
   font-weight: 500;
   line-height: 1.5;
@@ -96,7 +96,7 @@ img {
 }
 .current {
   position: relative;
-  color: #2e2f42;
+  color: #404bbf;
 }
 .header-link.current::after {
   position: absolute;
